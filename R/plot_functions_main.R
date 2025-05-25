@@ -84,6 +84,7 @@ plot_decision_curve <- function(x, curve.names,
                                xlim, ylim,
                                xlab, ylab,
                                cost.benefit.xlab,
+                               plot.grid = TRUE,
                                legend.position = c("topright", "right", "bottomright", "bottom", "bottomleft", "left", "topleft", "top", "none"),
                                ...){
 
@@ -397,7 +398,7 @@ plot_clinical_impact <- function(x,
                impact.legend.2 = (x$policy == "opt-out"),
                population.size = population.size,
                policy = x$policy,
-               plot.grid = plot.grid, 
+               plot.grid =plot.grid , 
                ...)
 
 }
